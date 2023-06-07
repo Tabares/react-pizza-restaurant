@@ -40,7 +40,7 @@ export const Search:React.FC = () => {
                 type="text"
                 name="search"
                 id="search"
-                placeholder="Поиск пиццы…"
+                placeholder="Looking for pizza..."
                 className="header__search-field"
                 value={value}
                 onChange={(e) => onSearchChange(e.target.value)}

@@ -70,7 +70,7 @@ export const PizzaBlock: React.FC<PizzaBlockProps> = ({
                 </ul>
             </div>
             <div className="pizza-block__bottom">
-                <div className="pizza-block__price">от {price} ₽</div>
+                <div className="pizza-block__price">For $ {price}</div>
                 <div
                     className="button button--outline button--add"
                     onClick={() =>

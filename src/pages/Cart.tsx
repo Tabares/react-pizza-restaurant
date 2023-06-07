@@ -58,7 +58,7 @@ const Cart: React.FC = () => {
                                 strokeLinejoin="round"
                             />
                         </svg>
-                        Корзина
+                        Cart
                     </h2>
                     <div className="cart__clear" onClick={onClickClear}>
                         <svg
@@ -111,12 +111,12 @@ const Cart: React.FC = () => {
                         <span>
                             {' '}
                             <span>Total pizzas:</span> <span className="filler"></span>{' '}
-                            <b>{count} шт.</b>{' '}
+                            <b>{count}</b>{' '}
                         </span>
                         <span>
                             {' '}
                             <span>Order price:</span> <span className="filler"></span>{' '}
-                            <b>{totalPrice} ₽</b>{' '}
+                            <b>$ {totalPrice}</b>{' '}
                         </span>
                     </div>
                     <div className="cart__bottom-buttons">
