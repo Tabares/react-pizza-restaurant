@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setCategoryId as setActiveIndex } from '../redux/filter/slice';
 import { RootState } from '../redux/store';
 
-export const categoriesDictionary = ['Все', 'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
+export const categoriesDictionary = ['All', 'Meat', 'Vegetarian', 'Grill', 'Spicy', 'Closed'];
 
 export const Categories: React.FC = () => {
     const activeIndex = useSelector((state: RootState) => state.filter.categoryId);

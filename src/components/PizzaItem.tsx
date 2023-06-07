@@ -39,7 +39,7 @@ export const PizzaItem:React.FC = () => {
     }, []);
 
     return !pizza ? (
-        <InfoBlock title="Загрузка..." description="Электронная пицца еще не допеклась :>" />
+        <InfoBlock title="Loading..." description="The e-pizza hasn't finished baking yet :>" />
     ) : (
         <div className="pizza-item">
             <div className="pizza-item__left-side">
@@ -47,7 +47,7 @@ export const PizzaItem:React.FC = () => {
             </div>
             <div className="pizza-item__right-side">
                 <h1>{pizza.title}</h1>
-                <p className="pizza-item__subtitle">Тип: {categoriesDictionary[pizza.category]}</p>
+                <p className="pizza-item__subtitle">Type: {categoriesDictionary[pizza.category]}</p>
                 <div className="pizza-item__selector">
                     <ul>
                         {pizza.types.map((typeIndex, index) => (
@@ -66,26 +66,26 @@ export const PizzaItem:React.FC = () => {
                                 key={index}
                                 className={activeSizeIndex === index ? 'active' : ''}
                                 onClick={() => setActiveSizeIndex(index)}>
-                                {size} см.
+                                {size} cm.
                             </li>
                         ))}
                     </ul>
                 </div>
                 <p className="pizza-item__description">
-                    Рейтинг <span></span> {pizza.rating} / 10
+                    Rating <span></span> {pizza.rating} / 10
                 </p>
 
                 <p className="pizza-item__description">
-                    Колличество <span></span> {count}
+                    Quantity <span></span> {count}
                 </p>
 
                 <p className="pizza-item__description">
-                    Цена <span></span> {pizza.price} ₽
+                    Price <span></span> $ {pizza.price}
                 </p>
 
                 <div className="pizza-item__buttonGroup">
                     <Link to="/">
-                        <button className="pizza-item__button">Назад</button>
+                        <button className="pizza-item__button">Back</button>
                     </Link>
                     <button
                         className="pizza-item__button"
@@ -102,7 +102,7 @@ export const PizzaItem:React.FC = () => {
                                 }),
                             )
                         }>
-                        Добавить
+                        Add
                     </button>
                 </div>
             </div>

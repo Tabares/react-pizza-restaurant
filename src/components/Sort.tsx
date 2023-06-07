@@ -5,12 +5,12 @@ import { setSortSelector as setSelector } from '../redux/filter/slice';
 import { RootState } from '../redux/store';
 
 export const selectorsDictionary = [
-    { title: 'популярности (DESC)', property: 'rating' },
-    { title: 'популярности (ASC)', property: '-rating' },
-    { title: 'цене (DESC)', property: 'price' },
-    { title: 'цене (ASC)', property: '-price' },
-    { title: 'алфавиту (DESC)', property: 'title' },
-    { title: 'алфавиту (ASC)', property: '-title' },
+    { title: 'Popularity (DESC)', property: 'rating' },
+    { title: 'Popularity (ASC)', property: '-rating' },
+    { title: 'Price (DESC)', property: 'price' },
+    { title: 'Price (ASC)', property: '-price' },
+    { title: 'Alphabet (DESC)', property: 'title' },
+    { title: 'Alphabet (ASC)', property: '-title' },
 ];
 
 export const Sort: React.FC = () => {
@@ -55,7 +55,7 @@ export const Sort: React.FC = () => {
                         fill="#2C2C2C"
                     />
                 </svg>
-                <b>Сортировка по:</b>
+                <b>Sort by:</b>
                 <span>{selector.title}</span>
             </div>
             <div className={'sort__popup' + (isVisible ? ' sort__visible' : '')}>

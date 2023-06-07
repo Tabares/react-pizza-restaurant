@@ -23,8 +23,8 @@ const App: React.FC = () => {
                         <React.Suspense
                             fallback={
                                 <InfoBlock
-                                    title="Идет загрузка..."
-                                    description="Подождите немного, официант уже бежит с вашей пиццей :>"
+                                    title="Loading..."
+                                    description="Wait a bit, the waiter is already running with your pizza :>"
                                 />
                             }>
                             <Cart />

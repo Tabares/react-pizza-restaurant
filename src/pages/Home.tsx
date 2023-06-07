@@ -69,11 +69,11 @@ const Home: React.FC = () => {
                 <Categories />
                 <Sort />
             </div>
-            <h2 className="content__title">Все пиццы</h2>
+            <h2 className="content__title">All pizzas</h2>
             {status === 'rejected' ? (
                 <InfoBlock
-                    title="Что-то пошло не так :<"
-                    description="Попробуйте обновить страницу. Мы скоро все уладим :>"
+                    title="Something went wrong :<"
+                    description="Try refreshing the page. We'll sort it out soon :>"
                     img={errorImg}
                 />
             ) : (

@@ -8,8 +8,8 @@ const NotFound:React.FC = () => {
     return (
         <>
             <InfoBlock
-                title="Ничего не было найдено"
-                description="К сожалению, такой страницы нет на нашем сайте"
+                title="Nothing was found"
+                description="Sorry, this page is not on our site."
                 img={notFoundImg}
             />
         </>

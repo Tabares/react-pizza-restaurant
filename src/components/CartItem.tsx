@@ -18,7 +18,7 @@ export const CartItem: React.FC<CartItemProps> = ({ id, title, image, type, size
     const dispatch = useDispatch();
 
     function onClickRemove() {
-        if (window.confirm(`Удалить пиццу '${title}' из корзины?`)) {
+        if (window.confirm(`Delete pizza '${title}' from the cart?`)) {
             dispatch(removeItem({ id, type, size } as TCartItem));
         }
     }

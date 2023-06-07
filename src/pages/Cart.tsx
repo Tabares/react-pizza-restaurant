@@ -16,7 +16,7 @@ const Cart: React.FC = () => {
     const count:number = items.reduce((sum:number, current) => sum + current.count, 0);
 
     function onClickClear() {
-        if (window.confirm('Очистить корзину?')) {
+        if (window.confirm('Empty trash?')) {
             dispatch(clearCart());
         }
     }
@@ -97,7 +97,7 @@ const Cart: React.FC = () => {
                             />
                         </svg>
 
-                        <span>Очистить корзину</span>
+                        <span>Empty trash</span>
                     </div>
                 </div>
                 <div className="content__items">
@@ -110,12 +110,12 @@ const Cart: React.FC = () => {
                     <div className="cart__bottom-details">
                         <span>
                             {' '}
-                            <span>Всего пицц:</span> <span className="filler"></span>{' '}
+                            <span>Total pizzas:</span> <span className="filler"></span>{' '}
                             <b>{count} шт.</b>{' '}
                         </span>
                         <span>
                             {' '}
-                            <span>Сумма заказа:</span> <span className="filler"></span>{' '}
+                            <span>Order price:</span> <span className="filler"></span>{' '}
                             <b>{totalPrice} ₽</b>{' '}
                         </span>
                     </div>
@@ -136,10 +136,10 @@ const Cart: React.FC = () => {
                                 />
                             </svg>
 
-                            <span>Вернуться назад</span>
+                            <span>Come back</span>
                         </Link>
                         <div className="button pay-btn">
-                            <span>Оплатить сейчас</span>
+                            <span>Pay now</span>
                         </div>
                     </div>
                 </div>

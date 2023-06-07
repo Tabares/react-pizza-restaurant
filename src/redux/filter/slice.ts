@@ -6,7 +6,7 @@ import { FilterSetProps, FilterSliceState, TSortSelector } from "./types";
 const initialState: FilterSliceState = {
     categoryId: 0,
     sortSelector: {
-        title: 'популярности (DESC)',
+        title: 'Popularity (DESC)',
         property: 'rating',
     },
     pageIndex: 1,

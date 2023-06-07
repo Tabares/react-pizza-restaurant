@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { addItem } from '../redux/cart/slice';
 import { RootState } from '../redux/store';
 
-type TType = 'тонкое' | 'традиционное';
+type TType = 'thin' | 'traditional';
 
-export const typeDictionary: TType[] = ['тонкое', 'традиционное'];
+export const typeDictionary: TType[] = ['thin', 'traditional'];
 
 interface PizzaBlockProps {
     id: string;
@@ -97,7 +97,7 @@ export const PizzaBlock: React.FC<PizzaBlockProps> = ({
                             fill="white"
                         />
                     </svg>
-                    <span>Добавить</span>
+                    <span>Add</span>
                     {count > 0 && <i>{count}</i>}
                 </div>
             </div>
