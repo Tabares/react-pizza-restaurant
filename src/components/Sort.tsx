@@ -27,7 +27,7 @@ export const Sort: React.FC = () => {
 
   React.useEffect(() => {
     function handleBodyClick(e) {
-      if (!e?.path?.includes(popupElement.current)) {
+      if (!!e?.path && !e?.path?.includes(popupElement.current)) {
         setIsVisible(false);
       }
     }

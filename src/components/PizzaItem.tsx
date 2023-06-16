@@ -34,7 +34,7 @@ export const PizzaItem: React.FC = () => {
 
   React.useEffect(() => {
     axios
-      .get(`https://62b7554a691dcea2733d6cff.mockapi.io/items/${id}`)
+      .get(`../pizza-${id}.json`)
       .then((res) => {
         setPizza(res.data);
       });
